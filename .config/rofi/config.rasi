@@ -1,0 +1,98 @@
+configuration {
+    modi: "drun";   
+    font: "JetBrains Mono 9"; 
+    show-icons: true;
+    icon-theme: "Papirus"; 
+    terminal: "alacritty";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: false;    
+
+    display-drun: "   Apps ";    
+    hover-select: true;
+    sidebar-mode: false;
+}
+
+window {
+    location: center;
+    anchor:   center;
+    width:    300px; 
+    border:   0;
+    border-radius: 12px;
+    background-color: #FDFDFD;
+}
+
+mainbox {
+    background-color: transparent; 
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: transparent;
+    padding: 8px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: #222222;
+    background-color: transparent;
+    margin: 0px 4px 0px 0px;
+}
+
+entry {
+    text-color: #222222;
+    background-color: transparent;
+}
+
+listview {
+    background-color: transparent;
+    lines: 9;
+    columns: 1;
+    fixed-height: true;
+    scrollbar: false;  
+    padding: 4px 0px 8px 0px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       #222222;
+}
+
+element {
+    padding: 6px 12px;
+    background-color: transparent;
+    text-color: #222222; 
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    padding: 0px 8px;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    background-color: inherit;
+    size: 24px; 
+}
+
+element selected.normal {
+    background-color: #FFFAFA; 
+    text-color:       #000000; 
+}
+
+element selected.normal element-text,
+element selected.normal element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element selected.normal, element selected.active {
+    background-color: #FFFAFA;  
+    text-color:       #000000; 
+}
+
+element alternate.normal {
+    background-color: #F8F8F9;
+    text-color:       #222222;
+}
