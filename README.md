@@ -134,7 +134,7 @@ chsh -s $(command -v fish)
 > if start **Single WM** via .xinitrc - at the end > insert
 
 ```bash
-exec herbstluftwm
+exec bspwm
 ```
 
 > if start **Several WM** via .xinitrc - at the end > insert
