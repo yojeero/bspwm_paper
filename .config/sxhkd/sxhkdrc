@@ -15,102 +15,75 @@ super + Return
 super + d
 	rofi -show drun
 
-super + w
-	firefox
-
-super + n
+super + e
 	thunar
 
-Print
-	xfce4-screenshooter -f
+super + x
+	mousepad
 
-super + Print
-    sleep 2; maim -u | tee "$HOME/Screen/pic_$(date +%F_%T).png" | xclip -selection clipboard -t image/png
+Print
+	maim -u | tee "$HOME/Screen/pic_$(date +%F_%T).png"
 
 # -------------------------------------
 # POLYBAR
 # -------------------------------------
 
 # hide/show polybar
-super + p
+super + b
 	polybar-msg cmd toggle
-
-# restart polybar
-super + shift + p
-	pkill -USR1 polybar || ~/.config/polybar/launch.sh
 
 # ---------------------------------------
 # restart
 # ---------------------------------------
 
-# Перезагрузить конфигурацию sxhkd
-super + e
-	pkill -USR1 -x sxhkd
-
-# Перезапустить bspwm
+# Restart bspwm
 super + alt + r
 	bspc wm -r
 
-# Выйти из bspwm
+# Quit bspwm
 super + alt + q
 	bspc quit
-
-# Перезагрузка ПК
-super + ctrl + r
-	sudo shutdown -r now
-
-# Выключение ПК
-super + ctrl + p
-	sudo shutdown -h now
 
 # ------------------------------------------
 # BSPWM
 # ------------------------------------------
 
-# Закрыть окно (мягко)
-super + x
+# Close window
+super + q
 	bspc node -c
 
-# Уничтожить процесс окна (принудительно)
+# Kill window process
 super + shift + q
 	bspc node -k
 
-# Переключение режима окна (Плавающее / Плиточное)
+# Switch desktop layout
 super + space
-	bspc node -t "~"{floating,tiled}
-
-# Переключение разметки рабочего стола (Tiled / Monocle)
-super + m
 	bspc desktop -l next
 
-# Вернуть фокус на предыдущее окно или рабочий стол
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+# Switch window mode
+super + m
+	bspc node -t "~"{floating,tiled}
 
-# Отправить помеченное окно к предвыбранному свободному месту
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
-
-# Поменять текущее окно местами с самым большим окном
+# Swap the current window with the largest window
 super + g
 	bspc node -s biggest.window
 
-# Растянуть/сжать окно до середины экрана слева
+# Stretch/shrink the window to the middle of the screen on the left
 super + alt + Left
     bspc node -z left -20 0 || bspc node -z right -20 0
 
-# Растянуть/сжать окно до середины экрана справа
+# Stretch/shrink the window to the middle of the screen on the right
 super + alt + Right
     bspc node -z right 20 0 || bspc node -z left 20 0
 
 # ------------------------------------------
-# РАБОЧИЕ СТОЛЫ
+# WORK TABLES
 # ------------------------------------------
 
-# Переключение на рабочий стол (1-10)
+# Switch to desktop (1-10)
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
-# Переместить активное окно на рабочий стол (1-10)
+# Move active window to desktop (1-10)
 super + shift + {1-9,0}
 	bspc node -d '^{1-9,10}'

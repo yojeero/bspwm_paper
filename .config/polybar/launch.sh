@@ -2,12 +2,12 @@
 
 #chmod +x ~/yopy/.config/polybar/launch.sh 2>/dev/null || chmod +x ~/.config/polybar/launch.sh
 
-# Завершить работу уже запущенных процессов polybar
+# Terminate already running processes polybar
 killall -q polybar
 
-# Ожидание удаления процессов
+# Waiting for processes to be deleted
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Запуск Polybar (замените "example" на имя вашей панели из config.ini)
+# Launch Polybar
 polybar top &
 

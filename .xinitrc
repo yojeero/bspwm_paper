@@ -49,5 +49,18 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-# sxhkd &
+# single wm
 exec bspwm
+# exec herbstluftwm
+# exec i3
+
+# several wm
+
+# case "$1" in
+#     herbstluftwm|hlwm)
+#         exec herbstluftwm
+#         ;;
+#     bspwm|*)
+#         exec bspwm
+#         ;;
+# esac

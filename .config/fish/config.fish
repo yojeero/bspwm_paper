@@ -106,3 +106,7 @@ if status is-login
         exec startx
     end
 end
+
+# start session
+abbr -a sx-bspwm 'startx'
+abbr -a sx-hlwm 'startx ~/.xinitrc herbstluftwm'
