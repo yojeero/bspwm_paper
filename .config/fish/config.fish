@@ -100,13 +100,13 @@ if test -f /etc/profile.env
     sed -E 's/^export ([A-Za-z0-9_]+)=(.*)$/set -gx \1 \2/' /etc/profile.env | source
 end
 
-# startx via fish
+# login session
+abbr -a sx-bspwm 'startx'
+abbr -a sx-hlwm 'startx ~/.xinitrc herbstluftwm'
+
 if status is-login
-    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+    if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
         exec startx
     end
 end
 
-# start session
-abbr -a sx-bspwm 'startx'
-abbr -a sx-hlwm 'startx ~/.xinitrc herbstluftwm'
