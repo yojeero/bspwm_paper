@@ -85,7 +85,7 @@ sudo pacman -S \
     imagemagick ffmpeg lxappearance glib2
 ```
 
-#### 5. Installing FISH (if want)
+#### 5. Installing FISH
 
 ```
 sudo pacman -S fish eza fzf fd
@@ -127,8 +127,6 @@ chsh -s $(command -v fish)
 
 ## Login via TTY
 
-> ### Single WM
-
 #### .xinitrc
 
 > at the end > insert
@@ -149,50 +147,6 @@ if status is-login
 end
 ```
 
-#### if using BASH
-
-#### .bash_profile
-
-> at the end > insert
-
-```
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
-```
-
-#### Login for Single WM
+#### Login to Bspwm
 
 > Arch Linux > login > pass
-
----
-
-> ### Several WM
-
-#### .xinitrc
-
-> at the end > insert
-
-```
-case "$1" in
-    herbstluftwm|hlwm)
-        exec herbstluftwm
-        ;;
-    bspwm|*)
-        exec bspwm
-        ;;
-esac
-```
-
-#### config.fish
-
-> insert alias for usefull
-
-```
-abbr -a sx-bspwm 'startx'
-abbr -a sx-hlwm 'startx ~/.xinitrc herbstluftwm'
-```
-
-#### Login for Several WM
-
-> Arch Linux > login > pass > sx-bspwm
