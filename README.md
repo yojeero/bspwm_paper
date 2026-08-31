@@ -170,9 +170,7 @@ chsh -s $(command -v fish)
 
 > Create folder **Screen** for saving screenshots via maim.
 
----
-
-## Login via TTY
+### Login via TTY
 
 #### .xinitrc
 
