@@ -1,11 +1,17 @@
+<h1 align="center">
+
+Bspwm 🐧 Dotfiles
+
 <img alt="Arch" src="https://img.shields.io/badge/Arch-0064b5?logo=arch-linux&logoColor=fff&style=for-the-badge" height="40"/><img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="40"/>
 
-# Bspwm 🐧 Dotfiles
+<br>
 
 <img src="screen/1.png" alt="Preview" width="50%" max-width="800px"><img src="screen/2.png" alt="Preview" width="50%" max-width="800px">
 <img src="screen/3.png" alt="Preview" width="50%" max-width="800px"><img src="screen/4.png" alt="Preview" width="50%" max-width="800px">
 
-# Paper Theme
+</h1>
+
+### Paper Theme
 
 <img alt="Linux" src="https://img.shields.io/badge/Linux-ffc425?style=for-the-badge&logo=linux&logoColor=black" height="24"/><img alt="Gentoo" src="https://img.shields.io/badge/Gentoo-6c5ce7?style=for-the-badge&logo=gentoo&logoColor=white" height="24"/><img alt="Debian" src="https://img.shields.io/badge/Debian-de324c?style=for-the-badge&logo=debian&logoColor=white" height="24"/><img alt="Suse" src="https://img.shields.io/badge/Suse-6ab04c?logo=opensuse&logoColor=fff&style=for-the-badge" height="24"/><img alt="Arch" src="https://img.shields.io/badge/Arch-0064b5?logo=arch-linux&logoColor=fff&style=for-the-badge" height="24"/><img alt="Alma" src="https://img.shields.io/badge/Alma-74b9ff?style=for-the-badge&logo=almalinux&logoColor=white" height="24"/>
 
@@ -39,7 +45,7 @@ archinstall
 on the step - profile - select > desktop > bspwm
 ```
 
-#### 2. After installing > reboot and update system
+#### 2. After installing - Reboot and update system
 
 ```
 sudo pacman -Syu
@@ -52,7 +58,7 @@ sudo pacman -S \
     xorg-xsetroot
 ```
 
-#### 3. Installing BSPWM and basic utilities
+#### 3. Installing BSPWM
 
 ```
 sudo pacman -S \
@@ -70,14 +76,14 @@ sxhkd \
    i3lock
 ```
 
-Give execution rights to configuration scripts:
+> Give execution rights to configuration scripts
 
 ```
 chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/polybar/launch.sh
 ```
 
-#### 4. Installing basic applications and dependencies
+#### 4. Installing Pkgs
 
 ```
 sudo pacman -S \
@@ -161,7 +167,7 @@ chsh -s $(command -v fish)
 
 > [yojeero/config_linux](https://github.com/yojeero/config_linux)
 
-#### Hide/show polybar + full desktop windows
+#### Hide/show Polybar + full desktop
 
 > use keybinding
 > `super + b `
