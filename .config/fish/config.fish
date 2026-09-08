@@ -8,6 +8,7 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 set -gx MICRO_TRUECOLOR 1
+set -gx TERMINAL alacritty
 
 # nano
 abbr -a n nano
@@ -34,13 +35,3 @@ abbr -a ka killall
 if test -f /etc/profile.env
     sed -E 's/^export ([A-Za-z0-9_]+)=(.*)$/set -gx \1 \2/' /etc/profile.env | source
 end
-
-# ----------------------------------
-#  auto startx
-# ----------------------------------
-if status is-login
-    if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
-        exec startx
-    end
-end
-

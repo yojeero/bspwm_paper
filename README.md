@@ -91,7 +91,6 @@ chmod +x ~/.config/polybar/launch.sh
 sudo pacman -S \
 
 alacritty \
-   kitty \
    foot \
    micro \
    mousepad \
@@ -129,11 +128,8 @@ imv \
    celluloid \
    rhythmbox \
    imagemagick \
-   ffmpeg
-
-lxappearance \
-   glib2 \
-   gcolor3
+   ffmpeg \
+   lxappearance
 ```
 
 #### 5. Installing FISH
