@@ -2,9 +2,7 @@
 
 Bspwm Dotfiles   
 
-`Arch`   
-
-:secret:   
+`Arch`  
 
 <br>
 
