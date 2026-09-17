@@ -23,7 +23,7 @@
 **Zorin Light** - Theme  
 **Gruvbox** - Icons
 
-## :books: Installation
+### 🧼 Installation
 
 #### 1. Boot to the Arch iso
 
@@ -64,6 +64,7 @@ sxhkd \
    i3lock
 ```
 
+> [!IMPORTANT]
 > Give execution rights to configuration scripts
 
 ```
@@ -149,21 +150,25 @@ chsh -s $(command -v fish)
 
 #### Used Dots, Icons, Themes, Wallpapers
 
+> [!NOTE]
 > [yojeero/config_linux](https://github.com/yojeero/config_linux)
 
-#### Hide/show Polybar + full desktop
+#### Hide/show Polybar
 
+> [!TIP]
 > use keybinding
 > `super + b `
 
 #### Folder for screenshots
 
+> [!TIP]
 > Create folder **Screen** for saving screenshots via maim.
 
-### :label: Login TTY
+### 🐧 Login TTY
 
 #### .xinitrc
 
+> [!TIP]
 > at the end > insert
 
 ```
@@ -172,6 +177,7 @@ exec bspwm
 
 #### config.fish
 
+> [!TIP]
 > at the end > insert
 
 ```
@@ -182,6 +188,7 @@ if status is-login
 end
 ```
 
-### :label: Login Bspwm
+### 🐧 Login Bspwm
 
+> [!TIP]
 > Arch Linux > login > pass
