@@ -160,7 +160,7 @@ chsh -s $(command -v fish)
 
 > Create folder **Screen** for saving screenshots via maim.
 
-### :label: Login via TTY
+### :label: TTY Login
 
 #### .xinitrc
 
@@ -182,6 +182,6 @@ if status is-login
 end
 ```
 
-### :label: Login to the Bspwm
+### :label: Bspwm Login
 
 > Arch Linux > login > pass
