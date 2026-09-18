@@ -1,7 +1,7 @@
 <img src="screen/1.png" alt="Preview" width="50%"><img src="screen/2.png" alt="Preview" width="50%">
 <img src="screen/3.png" alt="Preview" width="50%"><img src="screen/4.png" alt="Preview" width="50%">
 
-<img src="https://img.shields.io/badge/Bspwm_Arch-7678ed?style=for-the-badge" width="40%" alt="Bspwm Arch">
+<img src="https://img.shields.io/badge/Bspwm-7678ed?style=for-the-badge" width="40%" alt="Bspwm">
 
 | **Window Manager** <img width="20"/> | `bspwm` <img width="60"/> |
 | :----------------------------------- | :------------------------- |
