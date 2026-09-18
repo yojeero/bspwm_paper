@@ -3,7 +3,7 @@
 
 <img src="https://img.shields.io/badge/Bspwm_Arch-7678ed?style=for-the-badge" width="40%" alt="Bspwm Arch">
 
-| **Window Manager** <img width="60"/> | `bspwm` <img width="140"/> |
+| **Window Manager** <img width="20"/> | `bspwm` <img width="60"/> |
 | :----------------------------------- | :------------------------- |
 | **Hotkeys daemon**                   | `sxhkd`                    |
 | **Status bar**                       | `polybar`                  |
